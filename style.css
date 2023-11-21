@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #6495ed;
+    font-family: sans-serif;
+    color: #f0f8ff;
+    background-image: url(https://www.papeldeparede.etc.br/fotos/wp-content/uploads/1440_beautiful_dawn_wallpaper.jpg);
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear;
+
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    background: rgba(164, 100, 237, 0.151)
+}
+
+@keyframes rotate360{
+    from{
+       transform: rotateY(0deg);
+    }
+    to{
+       transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://viagememdetalhes.com.br/wp-content/uploads/2020/02/Capa-.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://jornaldaparaiba.com.br/wp-content/uploads/2022/02/Praia-do-Jacare-DIVULGACAO.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://christianherzog.com/wp-content/uploads/2021/06/CHR_2216.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://costanorte.com.br/media/legacy/42/53/420453.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0f/b6/ea/a3/nascer-do-sol-na-praia.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Nascer_do_Sol%2C_Muro_Alto_-_Porto_de_Galinhas%2C_Pernambuco.jpg/1200px-Nascer_do_Sol%2C_Muro_Alto_-_Porto_de_Galinhas%2C_Pernambuco.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2016/12/turismo-bora-bora-por-do-sol-1.jpg?quality=70&strip=all);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://miro.medium.com/v2/resize:fit:1000/0*H1P4EygAIru9Zb0k);
+    transform: rotateY(280deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://www.lg.com/pt/lg-experience/images/pt-pt/sunset-praias-img1.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+
+}
+
+
+
